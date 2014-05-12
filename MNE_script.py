@@ -149,6 +149,9 @@ evoked_left.plot()
 print "plot evoked for Right"
 evoked_right.plot()
 
+# plot all channels
+mne.viz.plot_topo([evoked_left, evoked_right],
+                  colors=["green", "red"], title="Left vs. Right")
 
 ### Estimate noise covariance
 
